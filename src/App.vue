@@ -1,28 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div id="map-container">
+      <leaflet-map></leaflet-map>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import LeafletMap from "./components/leaflet-map/LeafletMap.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld
+    "leaflet-map": LeafletMap
   }
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#map-container {
+  width: 100%;
+  height: 50vh;
 }
 </style>

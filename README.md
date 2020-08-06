@@ -1,4 +1,4 @@
-# practice-app
+# Leaflet Integration Test
 
 ## Project setup
 ```
@@ -22,3 +22,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+Testing the integration of Leaflet via node package into a vue application.
